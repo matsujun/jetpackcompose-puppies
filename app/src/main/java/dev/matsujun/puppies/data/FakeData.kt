@@ -17,7 +17,6 @@ package dev.matsujun.puppies.data
 
 import org.threeten.bp.LocalDate
 
-
 val puppies = listOf(
     Puppy(
         id = 0,
