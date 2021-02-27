@@ -16,9 +16,9 @@
 package dev.matsujun.puppies.data
 
 import androidx.compose.runtime.Immutable
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter
-import java.time.temporal.ChronoUnit
+import org.threeten.bp.LocalDate
+import org.threeten.bp.format.DateTimeFormatter
+import org.threeten.bp.temporal.ChronoUnit
 
 @Immutable
 data class Puppy(

@@ -15,7 +15,8 @@
  */
 package dev.matsujun.puppies.data
 
-import java.time.LocalDate
+import org.threeten.bp.LocalDate
+
 
 val puppies = listOf(
     Puppy(
