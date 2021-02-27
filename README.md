@@ -14,7 +14,7 @@ This app is timeline of puppy photo SNS.
 ## :bulb: Motivation and Context
 <!--- Optionally point readers to interesting parts of your submission. -->
 <!--- What are you especially proud of? -->
-
+My first Jetpack Compose App
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->

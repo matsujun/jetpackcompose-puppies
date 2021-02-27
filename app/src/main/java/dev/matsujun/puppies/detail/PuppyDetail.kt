@@ -5,14 +5,14 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.livedata.observeAsState
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.skydoves.landscapist.glide.GlideImage
 import dev.matsujun.puppies.R
 import dev.matsujun.puppies.data.Puppy
@@ -20,8 +20,16 @@ import dev.matsujun.puppies.data.puppies
 import dev.matsujun.puppies.ui.theme.PuppiesTheme
 
 @Composable
+fun DetailScreen(navController: NavController, puppyId: Int) {
+    val puppy = puppies.find { it.id == puppyId } ?: puppies[0]
+    PuppyDetail(puppy)
+}
+
+@Composable
 fun PuppyDetail(puppy: Puppy) {
-    Column{
+    Column(
+        modifier = Modifier.fillMaxWidth()
+    ) {
         GlideImage(
             imageModel = puppy.imageUrl ?: "",
             contentScale = ContentScale.FillWidth,
