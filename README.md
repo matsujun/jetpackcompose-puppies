@@ -9,6 +9,9 @@
 <!--- Describe your app in one or two sentences -->
 This app is timeline of puppy photo SNS.
 
+I have used Google's template project codes, but not used it as GitHub template.
+Maybe its not match DevChallenge's rule, so I re-generate repository with same name.
+The original one is moved to [here](https://github.com/matsujun/jetpackcompose-puppies_original)
 
 ## :bulb: Motivation and Context
 <!--- Optionally point readers to interesting parts of your submission. -->
